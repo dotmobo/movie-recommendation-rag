@@ -1,0 +1,12 @@
+# Python
+*.pyc
+__pycache__
+.pytest_cache/
+chroma
+
+# Poetry
+poetry.lock
+.venv/
+
+# IDEs
+.vscode/

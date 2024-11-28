@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "rag"
+version = "0.1.0"
+description = "A Python-based movie recommendation system using ChromaDB for indexing and searching movie data, SentenceTransformers for embedding generation, and Ollama for personalized recommendations. The system includes a Streamlit web interface to search for movies and receive recommendations based on user queries."
+authors = ["mobo"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+chromadb = "^0.5.20"
+ollama = "^0.4.1"
+sentence-transformers = "^3.3.1"
+streamlit = "^1.40.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-v --strict-markers"
+testpaths = [
+    "tests"
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
