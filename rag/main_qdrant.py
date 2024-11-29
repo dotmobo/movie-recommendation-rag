@@ -97,6 +97,7 @@ def main():
         if query:
             # Perform the search
             results = perform_query(client, query)
+            client.close()
 
             # Prepare the prompt for Ollama as the DVD salesperson
             documents = [result.document for result in results]
