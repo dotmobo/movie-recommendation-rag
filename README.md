@@ -40,7 +40,7 @@ poetry shell
 To run the application and start the Streamlit UI:
 
 ```bash
-streamlit run rag/main.py
+streamlit run rag/main_chroma.py
 ```
 
 This will open a web interface where you can search for movies and get recommendations.
