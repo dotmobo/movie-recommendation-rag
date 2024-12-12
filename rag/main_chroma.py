@@ -20,7 +20,7 @@ def initialize_chromadb():
 
 def generate_embeddings(model, content):
     """Generates embeddings for a given content."""
-    return model.encode(content)
+    return model.encode(content, precision="binary")
 
 
 def index_movies(movies, model, collection):
